@@ -1,4 +1,4 @@
-import Read_pdf
+from utils import Read_pdf
 from rag.models import semantic_metadata, Metadata
 
 
