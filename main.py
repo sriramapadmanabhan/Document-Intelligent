@@ -1,19 +1,19 @@
-from rag.models import Metadata
-from rag.pipeline import RAGPipeline
-from rag.validator import validate
+from rag.models import Metadata,Rag_status
+from rag.pipeline import C_pipeline
+from rag.validation import C_validate
+from typing import Union
 
 
 if __name__ == "__main__":
+    M=Metadata()
+    R=Rag_status()
+    pipeline = C_pipeline()
+    result = pipeline.pipeline(M,R)
 
-    meta = Metadata()
-    pipeline = RAGPipeline()
+    #result = C_validate()
 
-    result = pipeline.run(meta)
+    #print("\n=== RESULT ===\n")
+    #print(result.rag_result)
 
-    result = validate(result)
-
-    print("\n=== RESULT ===\n")
-    print(result.rag_result)
-
-    print("\n=== VALIDATION ===\n")
-    print(result.rag_status)
+    #print("\n=== VALIDATION ===\n")
+    #print(result.rag_status)
