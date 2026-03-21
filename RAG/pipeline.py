@@ -25,5 +25,4 @@ class C_pipeline:
         if value2.current_rag is None:
             value2.current_rag ='summary'
         self.C_M.create_MCP(value,value2)
-        exit()
-        C_validate.rag_validate(value)
+        self.C_V.rag_validate(value)

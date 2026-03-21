@@ -43,6 +43,7 @@ class Metadata(BaseModel):
     context:Optional[list[str]]=None
     index_obj:Optional[object]=None
     MCP:Optional[dict[str,Any]]=None
+    rag_result:Optional[str]=None
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
 class Rag_status(BaseModel):

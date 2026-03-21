@@ -4,7 +4,7 @@ import pdfplumber as pp
 
 class R_PDF:
     def __init__(self):
-        pdf_file = pp.open("C:\\Users\\srira\\Downloads\\4430249274.pdf")
+        pdf_file = pp.open("/home/sriram/program/Document-Intelligent/files/4430249274.pdf")
         self.pages = pdf_file.pages
         self.value = []
         self.section = []
