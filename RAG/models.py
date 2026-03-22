@@ -10,6 +10,11 @@ class cons_type(str,Enum):
     max_length="max_length"
     location="type"
     alias="type"
+    Integer="int"
+    string="str"
+    Numeric="Numeric"
+    Alpha_numeric="Alpha-numeric"
+    decimal="decimal"
 
 class semantic_metadata(BaseModel):
     section: Optional[str] = None
@@ -44,6 +49,9 @@ class Metadata(BaseModel):
     index_obj:Optional[object]=None
     MCP:Optional[dict[str,Any]]=None
     rag_result:Optional[str]=None
+    ntry:Optional[int]=Field(default_factory=lambda :0)
+    missed:Optional[list[Any]]=None
+    failed_validation:Optional[list[Any]]=None
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
 class Rag_status(BaseModel):

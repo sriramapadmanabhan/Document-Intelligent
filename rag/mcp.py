@@ -25,6 +25,7 @@ class C_mcp():
                         6) Format=json-result:key:value or None
                         7) Key is always any one of the Field name 
                         8) Do not skip key if not found"""
+            value.constraints = {"summaries-about-the-Document": {cons_type.type: cons_type.string, cons_type.min_length: 100}}
 
         elif value2.current_rag =='Railways':
             value.task = "Extract Railways Field"
@@ -33,21 +34,19 @@ class C_mcp():
                            'Train number', 'train name', 'bookind date and time', 'quota', 'distance',
                            'coach number', 'seat number',
                            'Seat confirm or not', 'Total amount paid', 'Total GST paid']
-            value.constraints = {"PNR": {cons_type.type: "Integer", cons_type.min_length: 5, cons_type.max_length: 12,
+            value.constraints = {"PNR": {cons_type.type: cons_type.Integer, cons_type.min_length: 5, cons_type.max_length: 12,
                                          cons_type.location: "we can expect near to Name of the Passenger"},
-                                 "Name": {cons_type.type: "String", cons_type.min_length: 3, cons_type.max_length: 30},
-                                 "sex": {cons_type.type: "string", cons_type.alias: "gender"},
-                                 "boarding station": {cons_type.type: "string", cons_type.max_length: 4},
-                                 "destination station": {cons_type.type: "string", cons_type.max_length: 4},
+                                 "Name": {cons_type.type: cons_type.String, cons_type.min_length: 3, cons_type.max_length: 30},
+                                 "sex": {cons_type.type: cons_type.string, cons_type.alias: "gender"},
+                                 "boarding station": {cons_type.type: cons_type.string, cons_type.max_length: 4},
+                                 "destination station": {cons_type.type: cons_type.string, cons_type.max_length: 4},
                                  "arrival date and time": {cons_type.type: "Date and time",
                                                            cons_type.location: "under To-station or Destination station"},
                                  "any proof to take while traveling": {cons_type.alias: ["document", "card"]},
                                  "emergency-contact": {cons_type.alias: 'Enquiries'}, cons_type.alias: ["Enquiry", "help"],
-                                 "seat number": {cons_type.type: "Numeric", cons_type.max_length: 4},
-                                 'coach number': {cons_type.type: "Alpha-numeric", cons_type.max_length: 4},
-                                 'Total amount paid': {cons_type.type: "decimal"
-                                                       ,cons_type.location: "payment related details"},
-                                 "distance": {cons_type.type: "integer"}}
+                                 "seat number": {cons_type.type: cons_type.Numeric, cons_type.max_length: 4},
+                                 'coach number': {cons_type.type: cons_type.Alpha_numeric, cons_type.max_length: 4},
+                                 'Total amount paid': {cons_type.type: cons_type.decimal,cons_type.location: "payment related details"},"distance": {cons_type.type: cons_type.integer}}
             value.rules = f"""
                         1) Retrieve only values in this list {value.field}, 
                         2) Remove unwanted other text
