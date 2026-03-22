@@ -3,7 +3,7 @@ import json, os, re, ast
 from rag.models import Metadata,semantic_metadata,Rag_status,cons_type
 from rag.retriever import C_retrieve
 
-class C_mcp()::
+class C_mcp():
     def create_MCP(self, value,value2):
         value = self.rag_instructions(value,value2)
         MCP = {"Task": value.task ,"Field": value.field ,"Field-constraints": value.constraints,"context": value.context ,"Rules": value.rules}
