@@ -8,7 +8,7 @@ class C_mcp():
         value = self.rag_instructions(value,value2)
         MCP = {"Task": value.task ,"Field": value.field ,"Field-constraints": value.constraints,"context": value.context ,"Rules": value.rules}
         value.MCP = MCP
-        value =self.RAG(value)
+        #value =self.RAG(value)
         return value
 
     # ---------------- SUMMARY MODE ----------------
