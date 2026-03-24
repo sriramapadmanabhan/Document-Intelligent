@@ -1,8 +1,13 @@
 import numpy as np
 from rag.models import Metadata
 from rag.index_creation import C_index
+import logging
+#from utils.index_manager import save_index, load_index
+
+
 
 class C_retrieve():
+    logger = logging.getLogger("RAG")
     def retrieve_context(self, question, value, k=10):
         if isinstance(question, list):
             question = " ".join(question)

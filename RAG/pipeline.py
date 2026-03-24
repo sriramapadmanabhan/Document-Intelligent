@@ -8,9 +8,10 @@ from utils.pdf_loader import C_load_pdf
 from rag.index_creation import C_index
 from rag.mcp import C_mcp
 from rag.validation import C_validate
-
+import logging
 
 class C_pipeline:
+    logger = logging.getLogger("RAG")
     def pipeline(self,value,value2):
         self.C_L_P=C_load_pdf()
         self.C_I=C_index(value)
