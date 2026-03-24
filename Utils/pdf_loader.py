@@ -28,9 +28,12 @@ class C_load_pdf():
 
     def split_into_chunks(self, value: Metadata) -> Metadata:
         if value.retry_count == 1:
+            value.chunk_size = 500
+            value.chunk_overlap = 50
+        if value.retry_count == 2:
             value.chunk_size = 200
             value.chunk_overlap = 50
-        elif value.retry_count == 2:
+        elif value.retry_count == 3:
             value.chunk_size = 400
             value.chunk_overlap = 50
         splitter = RecursiveCharacterTextSplitter(chunk_size=value.chunk_size, chunk_overlap=value.chunk_overlap,separators=["\n\n", "\n", ".", " ", ""])

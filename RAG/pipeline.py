@@ -27,3 +27,15 @@ class C_pipeline:
             value2.current_rag ='summary'
         self.C_M.create_MCP(value,value2)
         self.C_V.rag_validate(value,value2)
+        for i in value.retry_count:
+            if len(value.missed)>0 or len(value.failed_validation)>0:
+                value.retry_count+=1
+                self.C_L_P.load_pdf_context(value)
+                self.C_L_P.build_semantic_text(value)
+                self.C_L_P.split_into_chunks(value)
+                self.C_I.create_faiss_index(value)
+                self.C_I.create_bm25_index(value)
+                if value2.current_rag is None:
+                    value2.current_rag = 'summary'
+                self.C_M.create_MCP(value, value2)
+                self.C_V.rag_validate(value, value2)

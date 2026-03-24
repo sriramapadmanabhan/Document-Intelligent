@@ -25,7 +25,7 @@ class C_mcp():
                         6) Format=json-result:key:value or None
                         7) Key is always any one of the Field name 
                         8) Do not skip key if not found"""
-            value.constraints = {"summaries-about-the-Document": {cons_type.type: cons_type.string, cons_type.min_length: 100}}
+            value.constraints = {"summaries-about-the-Document": {cons_type.type.value: cons_type.string.value, cons_type.max_length.value: 10}}
 
         elif value2.current_rag =='Railways':
             value.task = "Extract Railways Field"
