@@ -2,8 +2,12 @@ import subprocess
 import json, os, re, ast
 from rag.models import Metadata,semantic_metadata,Rag_status,cons_type
 from rag.retriever import C_retrieve
+from openai import OpenAI
 
 class C_mcp():
+    def __init__(self):
+        self.client = OpenAI()
+
     def create_MCP(self, value,value2):
         value = self.rag_instructions(value,value2)
         MCP = {"Task": value.task ,"Field": value.field ,"Field-constraints": value.constraints,"context": value.context ,"Rules": value.rules}
@@ -24,8 +28,7 @@ class C_mcp():
                         5) No Explanation required in output
                         6) Format=json-result:key:value or None
                         7) Key is always any one of the Field name 
-                        8) Do not skip key if not found
-                        9) 'Document about' answer only from this given list [Railways,Lab-result,Bus-ticket]"""
+                        8) Do not skip key if not found"""
 
             value.constraints = {"summaries-about-the-Document": {cons_type.type.value: cons_type.string.value, cons_type.max_length.value: 10}}
 
@@ -71,9 +74,9 @@ class C_mcp():
 
     # ---------------- LLM CALL ----------------
     def RAG(self, value):
-        prompt = f"""Role : You are a experienced content summarizer and extractor in few words based on MCP given
-                    {json.dumps(value.MCP, indent=2)}"""
-        value.rag_result = subprocess.run(["ollama", "run", "mixtral", prompt] ,capture_output=True,text=True).stdout.strip()
+        prompt = f"""Role : You are a experienced content summarizer and extractor in few words based on MCP given {json.dumps(value.MCP, indent=2)}"""
+        value.rag_result = self.client.responses.create(model="gpt-4.1-mini", input=prompt)
+        #value.rag_result = subprocess.run(["ollama", "run", "mixtral", prompt] ,capture_output=True,text=True).stdout.strip()
         print(value.rag_result)
                                              
 
