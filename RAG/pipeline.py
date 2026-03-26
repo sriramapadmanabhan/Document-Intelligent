@@ -28,6 +28,10 @@ class C_pipeline:
             self.C_V.rag_validate(value,value2)
             for i in range(5):
                 if len(value.missed)>0 or len(value.failed_validation)>0:
+                    value.missed_hist.append( value.missed)
+                    value.missed=[]
+                    value.missed_hist.append(value.failed_validation)
+                    value.failed_validation=[]
                     value.retry_count+=1
                     if value.retry_count>3:
                         break

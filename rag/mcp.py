@@ -36,19 +36,19 @@ class C_mcp():
                            'Train number', 'train name', 'bookind date and time', 'quota', 'distance',
                            'coach number', 'seat number',
                            'Seat confirm or not', 'Total amount paid', 'Total GST paid']
-            value.constraints = {"PNR": {cons_type.type: cons_type.Integer, cons_type.min_length: 5, cons_type.max_length: 12,
-                                         cons_type.location: "we can expect near to Name of the Passenger"},
-                                 "Name": {cons_type.type: cons_type.String, cons_type.min_length: 3, cons_type.max_length: 30},
-                                 "sex": {cons_type.type: cons_type.string, cons_type.alias: "gender"},
-                                 "boarding station": {cons_type.type: cons_type.string, cons_type.max_length: 4},
-                                 "destination station": {cons_type.type: cons_type.string, cons_type.max_length: 4},
-                                 "arrival date and time": {cons_type.type: "Date and time",
+            value.constraints = {"PNR": {cons_type.type.value: cons_type.Integer.value, cons_type.min_length.value: 5, cons_type.max_length.value: 12,
+                                         cons_type.location.value: "we can expect near to Name of the Passenger"},
+                                 "Name": {cons_type.type.value: cons_type.string.value, cons_type.min_length.value: 3, cons_type.max_length.value: 30},
+                                 "sex": {cons_type.type.value: cons_type.string.value, cons_type.alias.value: "gender"},
+                                 "boarding station": {cons_type.type.value: cons_type.string.value, cons_type.max_length.value: 4},
+                                 "destination station": {cons_type.type.value: cons_type.string.value, cons_type.max_length.value: 4},
+                                 "arrival date and time": {cons_type.type.value:cons_type.Date_time.value,
                                                            cons_type.location: "under To-station or Destination station"},
-                                 "any proof to take while traveling": {cons_type.alias: ["document", "card"]},
-                                 "emergency-contact": {cons_type.alias: 'Enquiries'}, cons_type.alias: ["Enquiry", "help"],
-                                 "seat number": {cons_type.type: cons_type.Numeric, cons_type.max_length: 4},
-                                 'coach number': {cons_type.type: cons_type.Alpha_numeric, cons_type.max_length: 4},
-                                 'Total amount paid': {cons_type.type: cons_type.decimal,cons_type.location: "payment related details"},"distance": {cons_type.type: cons_type.integer}}
+                                 "any proof to take while traveling": {cons_type.alias.value: ["document", "card"]},
+                                 "emergency-contact": {cons_type.alias.value: 'Enquiries'}, cons_type.alias.value: ["Enquiry", "help"],
+                                 "seat number": {cons_type.type.value: cons_type.Numeric.value, cons_type.max_length.value: 4},
+                                 'coach number': {cons_type.type.value: cons_type.Alpha_numeric.value, cons_type.max_length.value: 4},
+                                 'Total amount paid': {cons_type.type.value: cons_type.decimal.value,cons_type.location.value: "payment related details"},"distance": {cons_type.type.value: cons_type.Integer.value}}
             value.rules = f"""
                         1) Retrieve only values in this list {value.field}, 
                         2) Remove unwanted other text

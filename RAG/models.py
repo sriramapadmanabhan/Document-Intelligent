@@ -15,6 +15,7 @@ class cons_type(str,Enum):
     Numeric="Numeric"
     Alpha_numeric="Alpha-numeric"
     decimal="decimal"
+    Date_time='Date and Time'
 
 class semantic_metadata(BaseModel):
     section: Optional[str] = None
@@ -51,7 +52,9 @@ class Metadata(BaseModel):
     rag_result:Optional[str]=None
     ntry:Optional[int]=Field(default_factory=lambda :0)
     missed:Optional[list[Any]]=Field(default_factory=list)
+    missed_hist:Optional[list[Any]]=Field(default_factory=list)
     failed_validation:Optional[list[Any]]=Field(default_factory=list)
+    failed_validation_hist: Optional[list[Any]] = Field(default_factory=list)
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
 class Rag_status(BaseModel):
