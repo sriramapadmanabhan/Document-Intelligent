@@ -55,7 +55,7 @@ class Metadata(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
 class Rag_status(BaseModel):
-    current_rag:Optional[str]=None
+    current_rag:Optional[str]='summary'
 
 class PipelineInput(BaseModel):
     M: Metadata

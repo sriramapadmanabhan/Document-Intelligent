@@ -8,14 +8,14 @@ class C_mcp():
         value = self.rag_instructions(value,value2)
         MCP = {"Task": value.task ,"Field": value.field ,"Field-constraints": value.constraints,"context": value.context ,"Rules": value.rules}
         value.MCP = MCP
-        #value =self.RAG(value)
+        value =self.RAG(value)
         return value
 
     # ---------------- SUMMARY MODE ----------------
     def rag_instructions(self, value,value2):
         if value2.current_rag =='summary':
             value.task = "summaries the Document"
-            value.field = ['summaries-about-the-Document']
+            value.field = ['summaries-about-the-Document','Document about']
             value.rules = f"""
                         1) Retrieve only values in this list {value.field}, 
                         2) Remove unwanted other text
@@ -24,7 +24,9 @@ class C_mcp():
                         5) No Explanation required in output
                         6) Format=json-result:key:value or None
                         7) Key is always any one of the Field name 
-                        8) Do not skip key if not found"""
+                        8) Do not skip key if not found
+                        9) 'Document about' answer only from this given list [Railways,Lab-result,Bus-ticket]"""
+
             value.constraints = {"summaries-about-the-Document": {cons_type.type.value: cons_type.string.value, cons_type.max_length.value: 10}}
 
         elif value2.current_rag =='Railways':

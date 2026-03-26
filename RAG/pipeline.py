@@ -18,24 +18,23 @@ class C_pipeline:
         value.index_obj=self.C_I
         self.C_M=C_mcp()
         self.C_V=C_validate()
-        self.C_L_P.load_pdf_context(value)
-        self.C_L_P.build_semantic_text(value)
-        self.C_L_P.split_into_chunks(value)
-        self.C_I.create_faiss_index(value)
-        self.C_I.create_bm25_index(value)
-        if value2.current_rag is None:
-            value2.current_rag ='summary'
-        self.C_M.create_MCP(value,value2)
-        self.C_V.rag_validate(value,value2)
-        for i in value.retry_count:
-            if len(value.missed)>0 or len(value.failed_validation)>0:
-                value.retry_count+=1
-                self.C_L_P.load_pdf_context(value)
-                self.C_L_P.build_semantic_text(value)
-                self.C_L_P.split_into_chunks(value)
-                self.C_I.create_faiss_index(value)
-                self.C_I.create_bm25_index(value)
-                if value2.current_rag is None:
-                    value2.current_rag = 'summary'
-                self.C_M.create_MCP(value, value2)
-                self.C_V.rag_validate(value, value2)
+        while True:
+            self.C_L_P.load_pdf_context(value)
+            self.C_L_P.build_semantic_text(value)
+            self.C_L_P.split_into_chunks(value)
+            self.C_I.create_faiss_index(value)
+            self.C_I.create_bm25_index(value)
+            self.C_M.create_MCP(value,value2)
+            self.C_V.rag_validate(value,value2)
+            for i in range(5):
+                if len(value.missed)>0 or len(value.failed_validation)>0:
+                    value.retry_count+=1
+                    if value.retry_count>3:
+                        break
+                else:
+                    value.retry_count=1
+                    value2.current_rag=json.loads(value.rag_result)['Document about']
+
+                if value.retry_count > 3:
+                    break
+
