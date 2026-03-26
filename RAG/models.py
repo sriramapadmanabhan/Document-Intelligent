@@ -55,7 +55,9 @@ class Metadata(BaseModel):
     missed_hist:Optional[list[Any]]=Field(default_factory=list)
     failed_validation:Optional[list[Any]]=Field(default_factory=list)
     failed_validation_hist: Optional[list[Any]] = Field(default_factory=list)
+    pipeline_step:Optional[int]=Field(default_factory=lambda :0)
     model_config = ConfigDict(arbitrary_types_allowed=True)
+
 
 class Rag_status(BaseModel):
     current_rag:Optional[str]='summary'

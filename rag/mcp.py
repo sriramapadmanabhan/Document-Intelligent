@@ -19,22 +19,23 @@ class C_mcp():
     def rag_instructions(self, value,value2):
         if value2.current_rag =='summary':
             value.task = "summaries the Document"
-            value.field = ['summaries-about-the-Document','Document about']
-            value.rules = f"""
-                        1) Retrieve only values in this list {value.field}, 
-                        2) Remove unwanted other text
-                        3) output format is strictly json only
-                        4) Naming the json output as 'json-result'
-                        5) No Explanation required in output
-                        6) Format=json-result:key:value or None
-                        7) Key is always any one of the Field name 
-                        8) Do not skip key if not found"""
+            value.field = ['summaries the Document','Document category']
+            value.rules = """
+            1) Output must be valid JSON
+            2) Use EXACT field names as keys
+            3) Do not rename keys
+            4) Do not add prefixes
+            5) If value missing return null
+            6) Category must be one of:
+               ['Railways','hospital','Tax']
+            """
 
-            value.constraints = {"summaries-about-the-Document": {cons_type.type.value: cons_type.string.value, cons_type.max_length.value: 10}}
+            value.constraints = {"summaries the Document": {cons_type.type.value: cons_type.string.value, cons_type.max_length.value: 1000},
+                                 "Document category":{cons_type.type.value: cons_type.string.value}}
 
         elif value2.current_rag =='Railways':
             value.task = "Extract Railways Field"
-            value.field = ['PNR , Passenger Name', 'sex', 'boarding station', 'destination station',
+            value.field = ['PNR' , 'Name', 'sex', 'boarding station', 'destination station',
                            'depature date and time', 'arrival date and time',
                            'Train number', 'train name', 'bookind date and time', 'quota', 'distance',
                            'coach number', 'seat number',
@@ -53,19 +54,16 @@ class C_mcp():
                                  'coach number': {cons_type.type.value: cons_type.Alpha_numeric.value, cons_type.max_length.value: 4},
                                  'Total amount paid': {cons_type.type.value: cons_type.decimal.value,cons_type.location.value: "payment related details"},"distance": {cons_type.type.value: cons_type.Integer.value}}
             value.rules = f"""
-                        1) Retrieve only values in this list {value.field}, 
-                        2) Remove unwanted other text
-                        3) output format is strictly json only
-                        4) Naming the json output as 'json-result'
-                        5) No Explanation required in output
-                        6) Format=json-result:key:value or None
-                        7) Key is always any one of the Field name 
-                        8) Do not skip key if not found"""
+                        1) Output must be valid JSON
+                        2) Use EXACT field names as keys
+                        3) Do not rename keys
+                        4) Do not add prefixes
+                        5) If value missing return null """
 
         if not value.field is None and len(value.field) > 0:
             C_R=C_retrieve()
             question_chunk = C_R.retrieve_context(value.field, value)
-            print('\n'.join(question_chunk))
+            #print('\n'.join(question_chunk))
             context = '\n'.join(question_chunk)
             value.context = context
         else:
@@ -75,9 +73,9 @@ class C_mcp():
     # ---------------- LLM CALL ----------------
     def RAG(self, value):
         prompt = f"""Role : You are a experienced content summarizer and extractor in few words based on MCP given {json.dumps(value.MCP, indent=2)}"""
-        value.rag_result = self.client.responses.create(model="gpt-4.1-mini", input=prompt)
+        value.rag_result = self.client.responses.create(model="gpt-4.1-mini", input=prompt,text={"format":{"type":"json_object"}}).output[0].content[0].text
         #value.rag_result = subprocess.run(["ollama", "run", "mixtral", prompt] ,capture_output=True,text=True).stdout.strip()
+        value.rag_result=json.loads(value.rag_result)
         print(value.rag_result)
-                                             
 
         return value

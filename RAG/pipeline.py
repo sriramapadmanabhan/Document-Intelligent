@@ -28,6 +28,9 @@ class C_pipeline:
             self.C_V.rag_validate(value,value2)
             for i in range(5):
                 if len(value.missed)>0 or len(value.failed_validation)>0:
+                    print('haiiii')
+                    print('retry count ==>',value.retry_count)
+                    print(value.missed,'->>',value.failed_validation)
                     value.missed_hist.append( value.missed)
                     value.missed=[]
                     value.missed_hist.append(value.failed_validation)
@@ -35,10 +38,14 @@ class C_pipeline:
                     value.retry_count+=1
                     if value.retry_count>3:
                         break
-                else:
+                elif value.pipeline_step<2:
+                    print('baiii')
+                    value.pipeline_step=2
                     value.retry_count=1
-                    value2.current_rag=json.loads(value.rag_result)['Document about']
-
-                if value.retry_count > 3:
+                    value2.current_rag=value.rag_result['Document category']
+                else:
                     break
+
+            if value.retry_count > 3:
+                break
 
