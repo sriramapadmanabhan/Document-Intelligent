@@ -20,20 +20,22 @@ class C_pipeline:
             self.C_I.create_faiss_index(value)
             self.C_I.create_bm25_index(value)
             self.C_M.create_MCP(value,value2)
-            self.C_R.RAG(value)
+            self.C_R.RAG(value,value2)
             self.C_V.rag_validate(value,value2)
             if len(value.missed)>0 or len(value.failed_validation)>0:
-                print('haiiii')
-                print('retry count ==>',value.retry_count)
-                print(value.missed,'->>',value.failed_validation)
+                value.log.info(f'validation failed Loop started for {value2.current_rag}')
+                value.log.info(f'retry count ==>{value.retry_count}')
+                value.log.info(f'Value Missed in LLM result {value.missed}')
+                value.log.info(f'value Failed in LLM result is {value.failed_validation}')
+                value.log.info(f'Semantic search used for above result is {value.L_semantic_search}')
                 value.retry_count+=1
                 if value.retry_count>3:
                     break
             elif value.pipeline_step<2:
-                print('baiii')
                 value.pipeline_step=2
-                value.retry_count=1
+                value.retry_count=0
                 value2.current_rag=value.rag_result['Document category']
+                value.log.info(f'Current Rag changed is {value2.current_rag}')
             else:
                 break
 

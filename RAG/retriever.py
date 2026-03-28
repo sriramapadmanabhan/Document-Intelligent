@@ -13,10 +13,8 @@ class C_retrieve():
             q_vec = np.array(q_vec).reshape(1, -1)
 
         D, I = value.index.search(q_vec, k)
-        print("D = =",D)
-        print("I =",I)
-        faiss_indices = I[0]
 
+        faiss_indices = I[0]
         tokenized_query = value.index_obj.tokenize(question)
         bm25_scores = value.bm25.get_scores(tokenized_query)
         bm25_indices = np.argsort(bm25_scores)[::-1][:k]

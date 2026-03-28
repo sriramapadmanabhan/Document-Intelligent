@@ -24,3 +24,387 @@
 2026-03-28 14:48:40,488 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
 2026-03-28 14:48:40,488 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
 2026-03-28 14:48:40,488 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:02:54,079 | INFO | RAG | Starting Pipeline
+2026-03-28 15:02:54,082 | INFO | RAG | Inside pipeline
+2026-03-28 15:03:17,186 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:03:17,187 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:03:17,187 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:03:17,187 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:20:48,466 | INFO | RAG | Starting Pipeline
+2026-03-28 15:20:48,470 | INFO | RAG | Inside pipeline
+2026-03-28 15:21:11,093 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:21:11,093 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:21:11,093 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:21:11,093 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:21:12,994 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:21:14,265 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:36:49,163 | INFO | RAG | Starting Pipeline
+2026-03-28 15:36:49,166 | INFO | RAG | Inside pipeline
+2026-03-28 15:37:07,889 | INFO | RAG | LLM resut
+2026-03-28 15:37:07,889 | INFO | RAG | Combined resut
+2026-03-28 15:39:15,611 | INFO | RAG | Starting Pipeline
+2026-03-28 15:39:15,614 | INFO | RAG | Inside pipeline
+2026-03-28 15:39:33,651 | INFO | RAG | LLM resut
+2026-03-28 15:39:33,651 | INFO | RAG | Combined resut
+2026-03-28 15:39:36,096 | INFO | RAG | LLM resut
+2026-03-28 15:39:36,097 | INFO | RAG | Combined resut
+2026-03-28 15:39:36,098 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:39:36,098 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:39:36,099 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:39:36,099 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:39:36,099 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:39:36,100 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:39:36,100 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:39:36,101 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:39:37,459 | INFO | RAG | LLM resut
+2026-03-28 15:43:29,621 | INFO | RAG | Starting Pipeline
+2026-03-28 15:43:29,624 | INFO | RAG | Inside pipeline
+2026-03-28 15:43:46,568 | INFO | RAG | LLM resut
+2026-03-28 15:43:46,569 | INFO | RAG | Combined resut
+2026-03-28 15:43:48,632 | INFO | RAG | LLM resut
+2026-03-28 15:43:48,633 | INFO | RAG | Combined resut
+2026-03-28 15:43:48,633 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:43:48,633 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:43:48,633 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:48,633 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:43:48,633 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:48,634 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:43:48,634 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:48,634 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:50,283 | INFO | RAG | LLM resut
+2026-03-28 15:43:50,284 | INFO | RAG | Combined resut
+2026-03-28 15:43:50,284 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:43:50,285 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:43:50,285 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:50,285 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:43:50,285 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:50,285 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:43:50,286 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:50,286 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:52,200 | INFO | RAG | LLM resut
+2026-03-28 15:43:52,200 | INFO | RAG | Combined resut
+2026-03-28 15:43:52,200 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:43:52,200 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:43:52,201 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:52,201 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:53,588 | INFO | RAG | LLM resut
+2026-03-28 15:43:53,588 | INFO | RAG | Combined resut
+2026-03-28 15:43:53,588 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:43:53,588 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:43:53,588 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:43:53,588 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:03,091 | INFO | RAG | Starting Pipeline
+2026-03-28 15:46:03,095 | INFO | RAG | Inside pipeline
+2026-03-28 15:46:19,935 | INFO | RAG | LLM resut
+2026-03-28 15:46:19,936 | INFO | RAG | Combined resut
+2026-03-28 15:46:22,122 | INFO | RAG | LLM resut
+2026-03-28 15:46:22,123 | INFO | RAG | Combined resut
+2026-03-28 15:46:22,123 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:46:22,124 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:46:22,124 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:22,124 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:46:22,124 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:22,124 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:46:22,124 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:22,126 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:25,575 | INFO | RAG | LLM resut
+2026-03-28 15:46:25,576 | INFO | RAG | Combined resut
+2026-03-28 15:46:25,576 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:46:25,577 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:46:25,577 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:25,577 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:46:25,578 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:25,578 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:46:25,578 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:25,578 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:26,641 | INFO | RAG | LLM resut
+2026-03-28 15:46:26,641 | INFO | RAG | Combined resut
+2026-03-28 15:46:26,641 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:46:26,641 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:46:26,642 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:26,642 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:27,768 | INFO | RAG | LLM resut
+2026-03-28 15:46:27,769 | INFO | RAG | Combined resut
+2026-03-28 15:46:27,769 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:46:27,769 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:46:27,769 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:46:27,769 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:23,839 | INFO | RAG | Starting Pipeline
+2026-03-28 15:52:23,843 | INFO | RAG | Inside pipeline
+2026-03-28 15:52:41,478 | INFO | RAG | LLM resut
+2026-03-28 15:52:41,478 | INFO | RAG | Combined resut
+2026-03-28 15:52:44,020 | INFO | RAG | LLM resut
+2026-03-28 15:52:44,021 | INFO | RAG | Combined resut
+2026-03-28 15:52:44,021 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:52:44,022 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:52:44,022 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:44,022 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:52:44,023 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:44,023 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:52:44,023 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:44,024 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:45,848 | INFO | RAG | LLM resut
+2026-03-28 15:52:45,850 | INFO | RAG | Combined resut
+2026-03-28 15:52:45,850 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:52:45,850 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:52:45,850 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:45,850 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:52:45,850 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:45,851 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:52:45,851 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:45,851 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:46,940 | INFO | RAG | LLM resut
+2026-03-28 15:52:46,940 | INFO | RAG | Combined resut
+2026-03-28 15:52:46,940 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:52:46,940 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:52:46,941 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:46,941 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:48,025 | INFO | RAG | LLM resut
+2026-03-28 15:52:48,026 | INFO | RAG | Combined resut
+2026-03-28 15:52:48,026 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:52:48,026 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:52:48,026 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:52:48,026 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:55:36,687 | INFO | RAG | Starting Pipeline
+2026-03-28 15:55:36,691 | INFO | RAG | Inside pipeline
+2026-03-28 15:55:56,539 | INFO | RAG | LLM resut
+2026-03-28 15:55:56,540 | INFO | RAG | Combined resut
+2026-03-28 15:55:56,540 | INFO | RAG | Current Rag changed is Railways
+2026-03-28 15:55:59,004 | INFO | RAG | LLM resut
+2026-03-28 15:55:59,005 | INFO | RAG | Combined resut
+2026-03-28 15:55:59,005 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:55:59,006 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:55:59,006 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:55:59,006 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:55:59,007 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:55:59,007 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:55:59,008 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:55:59,008 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:55:59,008 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 15:56:00,164 | INFO | RAG | LLM resut
+2026-03-28 15:56:00,164 | INFO | RAG | Combined resut
+2026-03-28 15:56:00,164 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:56:00,164 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:56:00,164 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:56:00,165 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:56:00,165 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:56:00,165 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:56:00,165 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:56:00,165 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:56:00,165 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 15:56:01,529 | INFO | RAG | LLM resut
+2026-03-28 15:56:01,529 | INFO | RAG | Combined resut
+2026-03-28 15:56:01,529 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:56:01,530 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:56:01,530 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:56:01,530 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:56:01,530 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 15:56:02,841 | INFO | RAG | LLM resut
+2026-03-28 15:56:02,841 | INFO | RAG | Combined resut
+2026-03-28 15:56:02,841 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:56:02,842 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:56:02,842 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:56:02,842 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:56:02,842 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 15:59:34,709 | INFO | RAG | Starting Pipeline
+2026-03-28 15:59:34,713 | INFO | RAG | Inside pipeline
+2026-03-28 15:59:51,457 | INFO | RAG | LLM resut
+2026-03-28 15:59:51,458 | INFO | RAG | Combined resut
+2026-03-28 15:59:51,458 | INFO | RAG | Current Rag changed is Railways
+2026-03-28 15:59:53,173 | INFO | RAG | LLM resut
+2026-03-28 15:59:53,173 | INFO | RAG | Combined resut
+2026-03-28 15:59:53,174 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:59:53,174 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:59:53,174 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:53,174 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:59:53,174 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:53,174 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:59:53,175 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:53,175 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:53,175 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 15:59:54,499 | INFO | RAG | LLM resut
+2026-03-28 15:59:54,500 | INFO | RAG | Combined resut
+2026-03-28 15:59:54,500 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:59:54,500 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:59:54,500 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:54,501 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:59:54,501 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:54,501 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:59:54,502 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:54,502 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:54,502 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 15:59:55,996 | INFO | RAG | LLM resut
+2026-03-28 15:59:55,996 | INFO | RAG | Combined resut
+2026-03-28 15:59:55,997 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:59:55,997 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:59:55,997 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:55,997 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:55,997 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 15:59:57,212 | INFO | RAG | LLM resut
+2026-03-28 15:59:57,213 | INFO | RAG | Combined resut
+2026-03-28 15:59:57,213 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 15:59:57,213 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 15:59:57,213 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:57,213 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 15:59:57,213 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:06:06,302 | INFO | RAG | Starting Pipeline
+2026-03-28 16:06:06,305 | INFO | RAG | Inside pipeline
+2026-03-28 16:06:24,573 | INFO | RAG | LLM resut
+2026-03-28 16:06:24,574 | INFO | RAG | Combined resut
+2026-03-28 16:06:24,575 | INFO | RAG | Current Rag changed is Railways
+2026-03-28 16:06:26,745 | INFO | RAG | LLM resut
+2026-03-28 16:06:26,746 | INFO | RAG | Combined resut
+2026-03-28 16:06:26,746 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:06:26,746 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:06:26,746 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:26,746 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:06:26,746 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:26,746 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:06:26,747 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:26,747 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:26,748 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:06:28,756 | INFO | RAG | LLM resut
+2026-03-28 16:06:28,756 | INFO | RAG | Combined resut
+2026-03-28 16:06:28,757 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:06:28,757 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:06:28,757 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:28,758 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:06:28,759 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:28,759 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:06:28,759 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:28,759 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:28,759 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:06:30,022 | INFO | RAG | LLM resut
+2026-03-28 16:06:30,022 | INFO | RAG | Combined resut
+2026-03-28 16:06:30,023 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:06:30,023 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:06:30,023 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:30,023 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:30,023 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:06:31,133 | INFO | RAG | LLM resut
+2026-03-28 16:06:31,134 | INFO | RAG | Combined resut
+2026-03-28 16:06:31,134 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:06:31,134 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:06:31,134 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:31,134 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:06:31,134 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:09:25,055 | INFO | RAG | Starting Pipeline
+2026-03-28 16:09:25,058 | INFO | RAG | Inside pipeline
+2026-03-28 16:09:45,676 | INFO | RAG | LLM resut
+2026-03-28 16:09:45,677 | INFO | RAG | Combined resut
+2026-03-28 16:09:45,677 | INFO | RAG | Current Rag changed is Railways
+2026-03-28 16:09:48,111 | INFO | RAG | LLM resut
+2026-03-28 16:09:48,111 | INFO | RAG | Combined resut
+2026-03-28 16:09:48,112 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:09:48,112 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:09:48,112 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:48,112 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:09:48,112 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:48,112 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:09:48,113 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:48,113 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:48,113 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:09:49,589 | INFO | RAG | LLM resut
+2026-03-28 16:09:49,589 | INFO | RAG | Combined resut
+2026-03-28 16:09:49,590 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:09:49,590 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:09:49,591 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:09:49,591 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:49,591 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:49,591 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:49,591 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:09:50,864 | INFO | RAG | LLM resut
+2026-03-28 16:09:50,864 | INFO | RAG | Combined resut
+2026-03-28 16:09:50,864 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:09:50,864 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:09:50,864 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:09:50,864 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:50,864 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:50,865 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:50,865 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:09:52,493 | INFO | RAG | LLM resut
+2026-03-28 16:09:52,493 | INFO | RAG | Combined resut
+2026-03-28 16:09:52,493 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:09:52,493 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:09:52,493 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:09:52,493 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:52,493 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:52,493 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:09:52,493 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:35:41,066 | INFO | RAG | Starting Pipeline
+2026-03-28 16:35:41,069 | INFO | RAG | Inside pipeline
+2026-03-28 16:35:58,384 | INFO | RAG | LLM result  ->  {'summaries the Document': 'The document is an electronic railway reservation slip detailing passenger booking info, ticket booking rules, acronyms for waitlist categories (RLWL, PQWL, RSWL), contact details for railway enquiries and e-catering services, PNR and train details, and IGST tax rate information.', 'Document category': 'Railways'}
+2026-03-28 16:36:48,818 | INFO | RAG | Starting Pipeline
+2026-03-28 16:36:48,838 | INFO | RAG | Inside pipeline
+2026-03-28 16:37:16,313 | INFO | RAG | LLM result  ->  {'summaries the Document': 'The document is an electronic reservation slip for a railway ticket booked on a personal user ID, which is an offense under Railways Act 1989. It includes passenger details, booking status, train and seat information, and customer care contacts for e-ticketing and e-catering services. Acronyms related to waitlists are defined. Tax details show 5% IGST with zero amount. The supplier state is Delhi.', 'Document category': 'Railways'}
+2026-03-28 16:40:16,962 | INFO | RAG | Starting Pipeline
+2026-03-28 16:40:16,965 | INFO | RAG | Inside pipeline
+2026-03-28 16:40:35,226 | INFO | RAG | LLM result  ->  {'summaries the Document': 'The document is an electronic railway reservation slip from IRCTC for a train booking between Tambaram (TBM) and Tirupati (TPJ). It includes passenger details, booking and current status, and mentions the booking is under personal User ID with sale/purchase offense under Railways Act, 1989. It explains acronyms like RLWL (Remote Location Waitlist), PQWL (Pooled Quota Waitlist), and RSWL (Road-Side Waitlist). Information on customer care for e-ticket booking, cancellation, and refunds, as well as e-catering service contacts, is provided. Tax details mention IGST with 5.0% rate but zero amount, supplier based in Delhi.', 'Document category': 'Railways'}
+2026-03-28 16:41:26,660 | INFO | RAG | Starting Pipeline
+2026-03-28 16:41:26,664 | INFO | RAG | Inside pipeline
+2026-03-28 16:41:45,654 | INFO | RAG | LLM result  ->  {'summaries the Document': "The document is an electronic railway reservation slip (ERS) for train number 06191 from Tambaram (TBM) to Tirupati (TPJ) for a second sitting (2S) class ticket. It includes passenger details, booking status, acronyms related to waitlists (RLWL, PQWL, RSWL), and mentions illegal sales under section 143 of the Railways Act, 1989. It provides contact information for railway enquiries, complaints via Rail Madad at 139 or SMS 'RAIL' to 139, and e-catering services available 24/7 at 1323 or ecatering.irctc.co.in. For e-ticket booking, cancellation, and refund assistance, the URL https://equery.irctc.co is given. Tax details include an IGST rate of 5.0% with zero tax amount, the place of supply is not applicable, and supplier state is Delhi (DL).", 'Document category': 'Railways'}
+2026-03-28 16:42:36,848 | INFO | RAG | Starting Pipeline
+2026-03-28 16:42:36,851 | INFO | RAG | Inside pipeline
+2026-03-28 16:42:59,181 | INFO | RAG | LLM result  ->  {'summaries the Document': 'This document contains details of an electronic railway reservation slip, including passenger and booking information, acronyms for waitlists such as RLWL, PQWL, RSWL; warnings on offences under Railways Act 1989 related to ticket purchase; passenger details with name, age, gender, booking status; train details with PNR and train number; customer care contacts for e-ticketing, catering services with toll-free contacts, and tax details reflecting IGST rate of 5%. The place of supply is Delhi with zero tax amount.', 'Document category': 'Railways'}
+2026-03-28 16:42:59,182 | INFO | RAG | Combined Result -> {'summary': {'summaries the Document': 'This document contains details of an electronic railway reservation slip, including passenger and booking information, acronyms for waitlists such as RLWL, PQWL, RSWL; warnings on offences under Railways Act 1989 related to ticket purchase; passenger details with name, age, gender, booking status; train details with PNR and train number; customer care contacts for e-ticketing, catering services with toll-free contacts, and tax details reflecting IGST rate of 5%. The place of supply is Delhi with zero tax amount.', 'Document category': 'Railways'}}
+2026-03-28 16:42:59,183 | INFO | RAG | Current Rag changed is Railways
+2026-03-28 16:43:01,639 | INFO | RAG | LLM result  ->  {'PNR': None, 'Name': None, 'sex': None, 'boarding station': None, 'destination station': None, 'depature date and time': None, 'arrival date and time': None, 'Train number': None, 'train name': None, 'booking date and time': None, 'quota': None, 'distance': None, 'coach number': None, 'seat number': None, 'Seat confirm or not': None, 'Total amount paid': None, 'Total GST paid': None}
+2026-03-28 16:43:01,640 | INFO | RAG | Combined Result -> {'summary': {'summaries the Document': 'This document contains details of an electronic railway reservation slip, including passenger and booking information, acronyms for waitlists such as RLWL, PQWL, RSWL; warnings on offences under Railways Act 1989 related to ticket purchase; passenger details with name, age, gender, booking status; train details with PNR and train number; customer care contacts for e-ticketing, catering services with toll-free contacts, and tax details reflecting IGST rate of 5%. The place of supply is Delhi with zero tax amount.', 'Document category': 'Railways'}, 'Railways': {'PNR': 0, 'Name': 0, 'sex': 0, 'boarding station': 0, 'destination station': 0, 'depature date and time': 0, 'arrival date and time': 0, 'Train number': 0, 'train name': 0, 'booking date and time': 0, 'quota': 0, 'distance': 0, 'coach number': 0, 'seat number': 0, 'Seat confirm or not': 0, 'Total amount paid': 0, 'Total GST paid': 0}}
+2026-03-28 16:43:01,640 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:01,640 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:01,640 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:01,640 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:01,640 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:01,641 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 0, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:43:01,641 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:01,641 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 0, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:01,641 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:43:01,641 | INFO | RAG | retry count ==>0
+2026-03-28 16:43:01,641 | INFO | RAG | Value Missed in LLM result []
+2026-03-28 16:43:01,641 | INFO | RAG | value Failed in LLM result is ['Name', 'boarding station', 'boarding station', 'destination station', 'destination station', 'distance', 'coach number', 'seat number']
+2026-03-28 16:43:01,641 | INFO | RAG | Semantic search used for above result is None
+2026-03-28 16:43:03,156 | INFO | RAG | LLM result  ->  {'Name': None, 'seat number': None, 'destination station': None, 'distance': None, 'coach number': None, 'boarding station': None}
+2026-03-28 16:43:03,156 | INFO | RAG | Combined Result -> {'summary': {'summaries the Document': 'This document contains details of an electronic railway reservation slip, including passenger and booking information, acronyms for waitlists such as RLWL, PQWL, RSWL; warnings on offences under Railways Act 1989 related to ticket purchase; passenger details with name, age, gender, booking status; train details with PNR and train number; customer care contacts for e-ticketing, catering services with toll-free contacts, and tax details reflecting IGST rate of 5%. The place of supply is Delhi with zero tax amount.', 'Document category': 'Railways'}, 'Railways': {'PNR': 0, 'Name': 0, 'sex': 0, 'boarding station': 0, 'destination station': 0, 'depature date and time': 0, 'arrival date and time': 0, 'Train number': 0, 'train name': 0, 'booking date and time': 0, 'quota': 0, 'distance': 0, 'coach number': 0, 'seat number': 0, 'Seat confirm or not': 0, 'Total amount paid': 0, 'Total GST paid': 0}}
+2026-03-28 16:43:03,157 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:03,157 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:03,157 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:03,157 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:03,157 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:43:03,157 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:03,157 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 1, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:03,157 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 1, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:03,158 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:43:03,158 | INFO | RAG | retry count ==>1
+2026-03-28 16:43:03,158 | INFO | RAG | Value Missed in LLM result []
+2026-03-28 16:43:03,158 | INFO | RAG | value Failed in LLM result is ['Name', 'seat number', 'destination station', 'destination station', 'distance', 'coach number', 'boarding station', 'boarding station']
+2026-03-28 16:43:03,158 | INFO | RAG | Semantic search used for above result is None
+2026-03-28 16:43:04,536 | INFO | RAG | LLM result  ->  {'Name': None, 'seat number': None, 'destination station': None, 'distance': None, 'coach number': None, 'boarding station': None}
+2026-03-28 16:43:04,536 | INFO | RAG | Combined Result -> {'summary': {'summaries the Document': 'This document contains details of an electronic railway reservation slip, including passenger and booking information, acronyms for waitlists such as RLWL, PQWL, RSWL; warnings on offences under Railways Act 1989 related to ticket purchase; passenger details with name, age, gender, booking status; train details with PNR and train number; customer care contacts for e-ticketing, catering services with toll-free contacts, and tax details reflecting IGST rate of 5%. The place of supply is Delhi with zero tax amount.', 'Document category': 'Railways'}, 'Railways': {'PNR': 0, 'Name': 0, 'sex': 0, 'boarding station': 0, 'destination station': 0, 'depature date and time': 0, 'arrival date and time': 0, 'Train number': 0, 'train name': 0, 'booking date and time': 0, 'quota': 0, 'distance': 0, 'coach number': 0, 'seat number': 0, 'Seat confirm or not': 0, 'Total amount paid': 0, 'Total GST paid': 0}}
+2026-03-28 16:43:04,536 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:04,536 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:04,536 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:04,536 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:04,536 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:43:04,536 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:04,536 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 2, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:04,537 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 2, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:04,537 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:43:04,537 | INFO | RAG | retry count ==>2
+2026-03-28 16:43:04,537 | INFO | RAG | Value Missed in LLM result []
+2026-03-28 16:43:04,537 | INFO | RAG | value Failed in LLM result is ['Name', 'seat number', 'destination station', 'destination station', 'distance', 'coach number', 'boarding station', 'boarding station']
+2026-03-28 16:43:04,537 | INFO | RAG | Semantic search used for above result is None
+2026-03-28 16:43:06,038 | INFO | RAG | LLM result  ->  {'Name': None, 'seat number': None, 'destination station': None, 'distance': None, 'coach number': None, 'boarding station': None}
+2026-03-28 16:43:06,038 | INFO | RAG | Combined Result -> {'summary': {'summaries the Document': 'This document contains details of an electronic railway reservation slip, including passenger and booking information, acronyms for waitlists such as RLWL, PQWL, RSWL; warnings on offences under Railways Act 1989 related to ticket purchase; passenger details with name, age, gender, booking status; train details with PNR and train number; customer care contacts for e-ticketing, catering services with toll-free contacts, and tax details reflecting IGST rate of 5%. The place of supply is Delhi with zero tax amount.', 'Document category': 'Railways'}, 'Railways': {'PNR': 0, 'Name': 0, 'sex': 0, 'boarding station': 0, 'destination station': 0, 'depature date and time': 0, 'arrival date and time': 0, 'Train number': 0, 'train name': 0, 'booking date and time': 0, 'quota': 0, 'distance': 0, 'coach number': 0, 'seat number': 0, 'Seat confirm or not': 0, 'Total amount paid': 0, 'Total GST paid': 0}}
+2026-03-28 16:43:06,039 | INFO | RAG | {'parameter_name': 'Name', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:06,039 | INFO | RAG | {'parameter_name': 'seat number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:06,039 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:06,039 | INFO | RAG | {'parameter_name': 'destination station', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:06,039 | INFO | RAG | {'parameter_name': 'distance', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'int'}
+2026-03-28 16:43:06,039 | INFO | RAG | {'parameter_name': 'coach number', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:06,039 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 3, 'cons_name': 'type', 'failed_value': 'str'}
+2026-03-28 16:43:06,039 | INFO | RAG | {'parameter_name': 'boarding station', 'retry-count': 3, 'cons_name': 'max_length', 'failed_value': 4}
+2026-03-28 16:43:06,040 | INFO | RAG | validation failed Loop started for Railways
+2026-03-28 16:43:06,040 | INFO | RAG | retry count ==>3
+2026-03-28 16:43:06,040 | INFO | RAG | Value Missed in LLM result []
+2026-03-28 16:43:06,040 | INFO | RAG | value Failed in LLM result is ['Name', 'seat number', 'destination station', 'destination station', 'distance', 'coach number', 'boarding station', 'boarding station']
+2026-03-28 16:43:06,040 | INFO | RAG | Semantic search used for above result is None

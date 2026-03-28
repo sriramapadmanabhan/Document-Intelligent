@@ -30,7 +30,7 @@ class semantic_metadata(BaseModel):
 class Metadata(BaseModel):
     rows:Optional[List[semantic_metadata]]=None
     semantic_data:Optional[List[str]]=Field(default_factory=list)
-    retry_count:Optional[int]=Field(default_factory=lambda :1)
+    retry_count:Optional[int]=Field(default_factory=lambda :0)
     chunk_size:Optional[int]=Field(default_factory=lambda :300)
     chunk_overlap:Optional[int]=Field(default_factory=lambda :50)
     chunks:Optional[List[Any]]=Field(default_factory=list)
@@ -51,10 +51,12 @@ class Metadata(BaseModel):
     MCP:Optional[dict[str,Any]]=None
     rag_result:Optional[str]=None
     ntry:Optional[int]=Field(default_factory=lambda :0)
-    missed:Optional[set[Any]]=Field(default_factory=set)
-    failed_validation:Optional[set[Any]]=Field(default_factory=set)
+    missed:Optional[list[Any]]=Field(default_factory=list)
+    failed_validation:Optional[list[Any]]=Field(default_factory=list)
     pipeline_step:Optional[int]=Field(default_factory=lambda :0)
     log:Optional[object]=None
+    L_json_result:Optional[dict[Any,Any]]=Field(default_factory=dict)
+    L_semantic_search:Optional[list[str]]=None
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
 

@@ -13,23 +13,24 @@ class C_index():
         return re.findall(r"\w+", text.lower())
 
     def create_faiss_index(self, value) -> Metadata:
-        value.embeddings = value.embed_model.encode(value.chunks)
-        for text, emb in zip(value.chunks, value.embeddings):
-            value.records.append(semantic_metadata(**{"text": text, "embedding": emb}))
-            print(value.records)
-        value.vectors = np.array([r.embedding for r in value.records]).astype("float32")
-        dim = value.vectors.shape[1]
-        value.index = faiss.IndexFlatL2(dim)
-        value.index.add(value.vectors)
-        print(f"[INFO] FAISS index created with {len(value.vectors)} chunks")
+        if value.index is None:
+            value.embeddings = value.embed_model.encode(value.chunks)
+            for text, emb in zip(value.chunks, value.embeddings):
+                value.records.append(semantic_metadata(**{"text": text, "embedding": emb}))
+            value.vectors = np.array([r.embedding for r in value.records]).astype("float32")
+            dim = value.vectors.shape[1]
+            value.index = faiss.IndexFlatL2(dim)
+            value.index.add(value.vectors)
+            print(f"[INFO] FAISS index created with {len(value.vectors)} chunks")
         return value
 
 
     def create_bm25_index(self, value) -> Metadata:
         # -------- Sparse (BM25) --------
-        tokenized_corpus = [self.tokenize(chunk) for chunk in value.chunks]
-        value.bm25 = BM25Okapi(tokenized_corpus)
-        print("[INFO] BM25 index created")
+        if value.bm25 is None:
+            tokenized_corpus = [self.tokenize(chunk) for chunk in value.chunks]
+            value.bm25 = BM25Okapi(tokenized_corpus)
+            print("[INFO] BM25 index created")
         return value
 
 
