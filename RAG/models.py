@@ -51,11 +51,10 @@ class Metadata(BaseModel):
     MCP:Optional[dict[str,Any]]=None
     rag_result:Optional[str]=None
     ntry:Optional[int]=Field(default_factory=lambda :0)
-    missed:Optional[list[Any]]=Field(default_factory=list)
-    missed_hist:Optional[list[Any]]=Field(default_factory=list)
-    failed_validation:Optional[list[Any]]=Field(default_factory=list)
-    failed_validation_hist: Optional[list[Any]] = Field(default_factory=list)
+    missed:Optional[set[Any]]=Field(default_factory=set)
+    failed_validation:Optional[set[Any]]=Field(default_factory=set)
     pipeline_step:Optional[int]=Field(default_factory=lambda :0)
+    log:Optional[object]=None
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
 

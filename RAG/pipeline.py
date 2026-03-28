@@ -3,11 +3,10 @@ from utils.pdf_loader import C_load_pdf
 from rag.index_creation import C_index
 from rag.mcp import C_mcp
 from rag.validation import C_validate
-import logging
 
 class C_pipeline:
-    logger = logging.getLogger("RAG")
     def pipeline(self,value,value2):
+        value.log.info('Inside pipeline')
         self.C_L_P=C_load_pdf()
         self.C_I=C_index(value)
         value.index_obj=self.C_I
@@ -27,8 +26,6 @@ class C_pipeline:
                 print('haiiii')
                 print('retry count ==>',value.retry_count)
                 print(value.missed,'->>',value.failed_validation)
-                value.missed_hist.append( value.missed)
-                value.missed_hist.append(value.failed_validation)
                 value.retry_count+=1
                 if value.retry_count>3:
                     break

@@ -14,7 +14,7 @@ class C_mcp():
         if value2.current_rag =='summary':
             value.task = "summaries the Document"
             if len(value.missed) > 0 or len(value.failed_validation) > 0:
-                value.missed.extend(value.failed_validation)
+                list(value.missed).extend(list(value.failed_validation))
                 value.field =value.missed
             else:
                 value.field = ['summaries the Document','Document category']
@@ -33,7 +33,7 @@ class C_mcp():
         elif value2.current_rag =='Railways':
             value.task = "Extract Railways Field"
             if len(value.missed) > 0 or len(value.failed_validation) > 0:
-                value.missed.extend(value.failed_validation)
+                list(value.missed).extend(list(value.failed_validation))
                 value.field =value.missed
             else:
                 value.field=['PNR' , 'Name', 'sex', 'boarding station', 'destination station',
@@ -70,3 +70,4 @@ class C_mcp():
         else:
             exit()
         return value
+

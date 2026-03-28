@@ -20,6 +20,13 @@ handlers:
     filename: logs/rag.log
     mode: a
 
+loggers:
+
+  RAG:
+    level: INFO
+    handlers: [console, file]
+    propagate: no
+
 root:
   level: INFO
   handlers: [console, file]

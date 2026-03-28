@@ -16,6 +16,7 @@ class C_index():
         value.embeddings = value.embed_model.encode(value.chunks)
         for text, emb in zip(value.chunks, value.embeddings):
             value.records.append(semantic_metadata(**{"text": text, "embedding": emb}))
+            print(value.records)
         value.vectors = np.array([r.embedding for r in value.records]).astype("float32")
         dim = value.vectors.shape[1]
         value.index = faiss.IndexFlatL2(dim)
