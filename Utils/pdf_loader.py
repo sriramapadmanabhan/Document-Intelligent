@@ -13,7 +13,6 @@ class C_load_pdf():
             value.rows = [semantic_metadata(**i) for i in structured_blocks]
             return value
 
-
     def build_semantic_text(self,value: Metadata) -> Metadata:
         for block in value.rows:
             heading = block.heading or ''
@@ -25,8 +24,8 @@ class C_load_pdf():
             value.semantic_data.append(text)
         return value
 
-
     def split_into_chunks(self, value: Metadata) -> Metadata:
+        value.chunks=[]
         if value.retry_count == 1:
             value.chunk_size = 500
             value.chunk_overlap = 50

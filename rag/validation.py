@@ -1,11 +1,10 @@
-import json, os, re, ast,builtins
+import re
 from datetime import datetime
-from pandas.core.dtypes.inference import is_decimal
-
 
 class C_validate():
-
     def rag_validate(self, value,value2):
+        value.missed = []
+        value.failed_validation = []
         f_validator = {'str': lambda x: isinstance(x, str), 'Alpha-numeric': lambda x: bool(re.match(r"^[a-zA-Z0-9 \-]+$", str(x))),
                        'decimal': lambda x:bool(re.match(r'^\d+\.\d+$', str(x))), 'int': lambda x: isinstance(x, int),
                        'Date_time':lambda x:isinstance(x,datetime)}
@@ -21,14 +20,15 @@ class C_validate():
                     for j in value.MCP["Field-constraints"][i].keys():
                         if j =="type" and f_validator.get(value.MCP["Field-constraints"][i][j]) is not None:
                                 if not f_validator.get(value.MCP["Field-constraints"][i][j])(value.rag_result[i]):
-                                    value.failed_validation.append(i)
+                                    value.failed_validation.append({i:value.MCP["Field-constraints"][i][j]})
 
                     if j=='max_length':
                         if not max_len(value.rag_result[i],value.MCP["Field-constraints"][i][j]):
-                            value.failed_validation.append(i)
+                            print(len(str(value.rag_result[i])))
+                            value.failed_validation.append({i:value.MCP["Field-constraints"][i][j]})
 
                     if j=='min_length':
                         if not min_len(value.rag_result[i],value.MCP["Field-constraints"][i][j]):
-                            value.failed_validation.append(i)
+                            value.failed_validation.append({i:value.MCP["Field-constraints"][i][j]})
         return value
 

@@ -1,7 +1,5 @@
 from rag.models import Metadata,Rag_status
 from rag.pipeline import C_pipeline
-from rag.validation import C_validate
-from typing import Union
 
 
 if __name__ == "__main__":

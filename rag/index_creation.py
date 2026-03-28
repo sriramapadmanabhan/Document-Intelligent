@@ -1,6 +1,6 @@
 import numpy as np
 import faiss
-import json, os, re, ast
+import re
 from rank_bm25 import BM25Okapi
 from rag.models import Metadata,semantic_metadata
 from sentence_transformers import SentenceTransformer
