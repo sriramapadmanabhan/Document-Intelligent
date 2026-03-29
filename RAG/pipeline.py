@@ -44,31 +44,41 @@ class C_pipeline:
             if value.retry_count > 3:
                 break"""
 
-    def data_processing(self,value):
+    def data_processing(self,state):
+        value=state.value
         self.C_L_P = C_load_pdf()
         self.C_L_P.load_pdf_context(value)
         self.C_L_P.build_semantic_text(value)
         self.C_L_P.split_into_chunks(value)
 
-    def index_processing(self,value):
+    def index_processing(self,state):
+        value=state.value
         self.C_I = C_index(value)
         value.index_obj = self.C_I
         self.C_I.create_faiss_index(value)
         self.C_I.create_bm25_index(value)
 
-    def model_context_protocal(self,value,value2):
+    def model_context_protocal(self,state):
+        value=state.value
+        value2=state.value2
         self.C_M = C_mcp()
         self.C_M.create_MCP(value, value2)
 
-    def call_LLM(self,value,value2):
+    def call_LLM(self,state):
+        value=state.value
+        value2=state.value2
         self.C_R = C_rag()
         self.C_R.RAG(value, value2)
 
-    def validate_result(self,value,value2):
+    def validate_result(self,state):
+        value=state.value
+        value2=state.value2
         self.C_V = C_validate()
         self.C_V.rag_validate(value, value2)
 
-    def conditional_check(self,value,value2):
+    def conditional_check(self,state):
+        value=state.value
+        value2=state.value2
         if len(value.missed) > 0 or len(value.failed_validation) > 0:
             value.log.info(f'validation failed Loop started for {value2.current_rag}')
             value.log.info(f'retry count ==>{value.retry_count}')

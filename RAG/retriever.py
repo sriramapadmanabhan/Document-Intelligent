@@ -4,7 +4,7 @@ import logging
 
 class C_retrieve():
     logger = logging.getLogger("RAG")
-    def retrieve_context(self, question, value, k=10):
+    def retrieve_context(self, question, value, k=20):
         if isinstance(question, list):
             question = " ".join(question)
 
@@ -13,6 +13,10 @@ class C_retrieve():
             q_vec = np.array(q_vec).reshape(1, -1)
 
         D, I = value.index.search(q_vec, k)
+        a=[]
+        for i in I[0]:
+            print(value.records[i].text)
+
 
         faiss_indices = I[0]
         tokenized_query = value.index_obj.tokenize(question)
@@ -21,4 +25,5 @@ class C_retrieve():
 
         final_indices = value.index_obj.rrf_fusion(value,faiss_indices, bm25_indices)
         final_indicex = final_indices.sorted_doc[:k]
+        value.L_semantic_search=[value.records[i].text for i in final_indicex]
         return [value.records[i].text for i in final_indicex]
