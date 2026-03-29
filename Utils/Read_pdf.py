@@ -56,6 +56,7 @@ class R_PDF:
                                 res["Is_bold"] = res["property"][0]["is_bold"]
                                 res.__delitem__("property")
                                 self.value.append(res)
+        #print(self.value)
         return self.value
 
     def convert_to_data(self):
@@ -63,6 +64,7 @@ class R_PDF:
         b = a[a["font_size"] == a.groupby(["page_no", "table_num", "row_num"])["font_size"].transform("max")]
         b["words_concat"] = (b.groupby(["page_no", "table_num", "row_num"])["word"].transform(lambda x: "/".join(x)))
         c = b[['page_no', 'table_num', 'row_num', 'words_concat']].drop_duplicates()
+        #print(c.to_dict(orient='records'))
         return c.to_dict(orient='records')
 
     def semantic(self, value):
@@ -81,7 +83,7 @@ class R_PDF:
         obj = R_PDF()
         obj.get_page_details()
         zz = obj.convert_to_data()
-        print(obj.semantic(zz))
+        obj.semantic(zz)
 if __name__ == "__main__":
     r=R_PDF()
     r.run()
