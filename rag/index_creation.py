@@ -21,7 +21,7 @@ class C_index():
             dim = value.vectors.shape[1]
             value.index = faiss.IndexFlatL2(dim)
             value.index.add(value.vectors)
-            print(f"[INFO] FAISS index created with {len(value.vectors)} chunks")
+            #print(f"[INFO] FAISS index created with {len(value.vectors)} chunks")
         return value
 
 
@@ -30,7 +30,6 @@ class C_index():
         if value.bm25 is None:
             tokenized_corpus = [self.tokenize(chunk) for chunk in value.chunks]
             value.bm25 = BM25Okapi(tokenized_corpus)
-            print("[INFO] BM25 index created")
         return value
 
 
