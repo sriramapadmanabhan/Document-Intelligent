@@ -21,5 +21,10 @@ builder.add_edge("mcp","rag")
 builder.add_edge("rag","validate")
 builder.add_conditional_edges("validate",C_P.conditional_check,{"retry": "load_pdf","end": END})
 
+builder.set_entry_point("load_pdf")
+graph = builder.compile()
 
+def run_pipeline(value, value2):
+    initial_state = PipelineState(value=value,value2=value2)
+    graph.invoke(initial_state)
 

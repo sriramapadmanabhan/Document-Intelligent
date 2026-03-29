@@ -408,3 +408,4 @@
 2026-03-28 16:43:06,040 | INFO | RAG | Value Missed in LLM result []
 2026-03-28 16:43:06,040 | INFO | RAG | value Failed in LLM result is ['Name', 'seat number', 'destination station', 'destination station', 'distance', 'coach number', 'boarding station', 'boarding station']
 2026-03-28 16:43:06,040 | INFO | RAG | Semantic search used for above result is None
+2026-03-29 17:08:11,628 | INFO | RAG | Starting Pipeline
