@@ -68,6 +68,7 @@ class C_mcp():
             context = '\n'.join(question_chunk)
             value.context = context
         else:
+            value.log.info(f'There is no Question to Ask LLM, application terminating')
             exit()
         return value
 
